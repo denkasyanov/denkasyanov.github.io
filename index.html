@@ -92,10 +92,10 @@ hi
 
         var timeSpent = now - theDate;
 
-        var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        var days = Math.floor(timeSpent / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeSpent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeSpent % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeSpent % (1000 * 60)) / 1000);
 
         document.getElementById("timer-text").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
